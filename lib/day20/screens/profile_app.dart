@@ -12,20 +12,7 @@ class ProfileApp extends StatelessWidget {
     'Surfing Web',
     'Tumblr',
     'Pinterest',
-    'Instagram',
-    'Facebook',
-    'Twitter',
-    'LinkedIn',
-    'YouTube',
-    'Snapchat',
-    'WhatsApp',
-    'Telegram',
-    'Skype',
-    'Discord',
-    'Slack',
-    'Google Hangouts',
-    'Zoom',
-    'Skype',
+    'Instagram'
   ];
   ProfileApp({super.key});
   @override
