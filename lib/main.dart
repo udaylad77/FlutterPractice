@@ -1,6 +1,4 @@
-import 'package:dailywork/day20/screens/profile_app.dart';
 import 'package:dailywork/day21/getx/screens/homeScreen.dart';
-
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
