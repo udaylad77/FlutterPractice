@@ -25,28 +25,29 @@ class HomeScreen extends StatelessWidget {
                   final loc =
                       covidController.regionalList[index].loc ?? 'Unknown';
                   return Card(
+                      margin: const EdgeInsets.all(8),
                       child: Padding(
-                    padding: const EdgeInsets.all(16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          loc,
-                          style: const TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
+                        padding: const EdgeInsets.all(16),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              loc,
+                              style: const TextStyle(
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            const SizedBox(height: 8),
+                            Text(
+                              'Confirmed Cases: ${covidController.regionalList[index].totalConfirmed ?? 0}',
+                              style: const TextStyle(
+                                fontSize: 20,
+                              ),
+                            ),
+                          ],
                         ),
-                        const SizedBox(height: 8),
-                        Text(
-                          'Confirmed Cases: ${covidController.regionalList[index].totalConfirmed ?? 0}',
-                          style: const TextStyle(
-                            fontSize: 16,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ));
+                      ));
                 },
               ),
       ),
